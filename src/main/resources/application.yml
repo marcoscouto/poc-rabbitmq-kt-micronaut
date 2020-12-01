@@ -8,4 +8,8 @@ rabbitmq:
   username: ${RABBITMQ_USER:user}
   password: ${RABBITMQ_PASS:pass}
 
-topics: transactions
+rmq:
+  config:
+    topics: transactions
+    timer: 20s
+

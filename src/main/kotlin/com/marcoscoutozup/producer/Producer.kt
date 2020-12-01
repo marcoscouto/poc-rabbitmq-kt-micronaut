@@ -15,7 +15,7 @@ class Producer(val producer: TransactionProducer) {
 
     val log = LoggerFactory.getLogger(Producer::class.java)
 
-    @Scheduled(fixedRate = "20s")
+    @Scheduled(fixedRate = "\${rmq.config.timer}")
     fun sender(){
         val uuid = UUID.randomUUID().toString()
         val value = BigDecimal(Random()

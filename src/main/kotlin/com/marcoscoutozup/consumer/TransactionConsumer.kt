@@ -10,7 +10,7 @@ class TransactionConsumer {
 
     val log = LoggerFactory.getLogger(TransactionConsumer::class.java)
 
-    @Queue("\${topics}")
+    @Queue("\${rmq.config.topics}")
     fun listener(transaction: Transaction){
         log.info("[CONSUMER] Transaction received: {}", transaction)
     }
