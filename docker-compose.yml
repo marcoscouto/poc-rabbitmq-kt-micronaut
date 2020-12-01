@@ -8,4 +8,5 @@ services:
       RABBITMQ_USERNAME: user
       RABBITMQ_PASSWORD: pass
     ports:
-      - 15672:15672
+      - "15672:15672"
+      - "5672:5672"

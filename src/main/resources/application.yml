@@ -1,3 +1,9 @@
 micronaut:
   application:
     name: mensageria
+
+rabbitmq:
+  host: ${RABBITMQ_HOST:localhost}
+  port: ${RABBITMQ_PORT:5672}
+  username: ${RABBITMQ_USER:user}
+  password: ${RABBITMQ_PASS:pass}
