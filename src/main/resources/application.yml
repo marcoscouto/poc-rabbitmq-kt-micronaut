@@ -7,3 +7,5 @@ rabbitmq:
   port: ${RABBITMQ_PORT:5672}
   username: ${RABBITMQ_USER:user}
   password: ${RABBITMQ_PASS:pass}
+
+topics: transactions

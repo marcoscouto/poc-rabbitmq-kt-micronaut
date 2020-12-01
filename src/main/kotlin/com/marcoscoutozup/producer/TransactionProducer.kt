@@ -7,7 +7,7 @@ import io.micronaut.rabbitmq.annotation.RabbitClient
 @RabbitClient
 interface TransactionProducer {
 
-    @Binding("transaction")
+    @Binding("\${topics}")
     fun send(transaction: Transaction)
 
 }
